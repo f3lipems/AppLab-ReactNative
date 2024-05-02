@@ -15,6 +15,7 @@ import {
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 import First from './src/components/First';
+import Comp, { Comp1, Comp2 } from './src/components/Mult';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -31,6 +32,9 @@ function App(): React.JSX.Element {
         <View style={{ backgroundColor: isDarkMode ? Colors.black : Colors.white }}>
 
           <First />
+          <Comp />
+          <Comp1 />
+          <Comp2 />
 
         </View>
       </ScrollView>
